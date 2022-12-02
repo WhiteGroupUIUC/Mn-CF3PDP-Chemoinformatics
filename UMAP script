@@ -64,12 +64,9 @@ input_RDKFingerprint_descriptors, input_keep_idx = compute_RDKFingerprint(input[
 # Only keep those that sucessfully featurized
 input = input.iloc[input_keep_idx]
 
-[8]
-
 #To Run UMAP and export CSV file
 
 import csv
-
 
 umap_mdel_global = umap.UMAP(metric = "jaccard",
                                n_neighbors = 25,
